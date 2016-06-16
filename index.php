@@ -1,44 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
+	<title>Practica</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/materialize.min.css">
 </head>
-<body>
-	<header>
-	<h1>hola Mundo </h1>
-	</header>
-	<section>
-		<h1>Section</h1>
 
-		<div class="test">probando.. y haciendo una modificacion en la pag probando Git</div>
-		<div class="test">probando.. y haciendo una modificacion en la pag probando Git</div>
-
-		<script>
-				var n = 2;
-var no = "no";
-while(n)
-{
-    no += no;
-    n -= 1;
-}
-
-
-		ript>
+	<div class="card-panel blue darken-4">Titulo de la Pagina </div>
 	
+	<div class="container">
+		<div class="row">
+		
+			<div class="col s4"><img src="image/1.jpg" class="responsive-img z-depth-3"></div>
+			<div class="col s4"><img src="image/2.jpg" class="responsive-img z-depth-3"></div>
+			<div class="col s4"><img src="image/3.jpg" class="responsive-img z-depth-3"></div>
+			
 
-		<table>
-			<td>
-				<tr class="algo1">Test</tr>
-				<tr class="algo2"> proband</tr>
-			</td>
-			<td>
-				<tr class="algo1">otra</tr>
-				<tr class="algo2">cosa</tr>
-			</td>
-		</table>
-	</section>
-	<footer><h3>Footer</h3></footer>
-</body>
+		</div>
+
+		<div class="row">
+			<   <table>
+        <thead>
+          <tr>
+              <th data-field="id">Nombre</th>
+              <th data-field="name">Edad</th>
+              <th data-field="price">Peso</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Bombom</td>
+            <td>16</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Bellota</td>
+            <td>6</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>Kitty</td>
+            <td>5</td>
+            <td>16</td>
+          </tr>
+        </tbody>
+      </table>
+
+		</div>
+
+		<div class="row">
+			<div class="col s4"> </div>
+			<div class="col s4"> </div>
+			<div class="col s4"> </div>
+			<div class="col s4"><a href="" class="btn">Cancelar</a><a href="" class="btn">Guardar</a></div>
+
+
+		</div>
+
+	</div>
+
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/materialize.min.js"></script>
+</body>	
+
+<footer></footer>
 </html>
+	
