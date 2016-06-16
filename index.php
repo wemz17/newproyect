@@ -60,6 +60,23 @@
 		</div>
 
 	</div>
+	<script>
+	var min,max;
+	function random(min,max){
+
+		var aleatorio=Math.random();
+		alert (aleatorio);
+		
+		var numero = Math.floor(aleatorio*(max-min)+min);
+
+	return numero;
+	}
+
+	alert(random (20,50));
+
+	</script>
+
+
 
 <script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/materialize.min.js"></script>
