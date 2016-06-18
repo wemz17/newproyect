@@ -36,11 +36,11 @@
         <thead>
           <tr>
 
-              <th data-field="nombre">Nombre</th><i class="material-icons">add</i>
+              <th data-field="nombre_m">Nombre</th><i class="material-icons">add</i>
               <th data-field="edad">Edad</th><i class="material-icons">language</i>
               <th data-field="sexo">Sexo</th><i class="material-icons">print</i>
  			  <th data-field="color">Color</th><i class="material-icons">add</i>
-              <th data-field="peso">Peso</th><i class="material-icons">language</i>
+              <th data-field="peso_m">Peso</th><i class="material-icons">language</i>
               
 
           </tr>
@@ -48,11 +48,18 @@
 
         <tbody>
           <tr>
-            <td id="name">empty</td>
+            <td id="nombre">empty</td>
             <td id="age">empty</td>
             <td id="sexo">empty</td>
             <td id="color">empty</td>
-            <td id="Peso">empty</td>
+            <td id="peso">empty</td>
+          </tr>
+          <tr>
+            <td id="nombre1">empty</td>
+            <td id="age1">empty</td>
+            <td id="sexo1">empty</td>
+            <td id="color1">empty</td>
+            <td id="peso1">empty</td>
           </tr>
          
         </tbody>
