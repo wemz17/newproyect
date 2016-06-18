@@ -5,13 +5,25 @@
 	<title>Practica</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/materialize.min.css">
-</head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<div class="card-panel blue darken-4">Titulo de la Pagina </div>
-	
-	<div class="container">
-		<div class="row">
+</head>
 		
+		 <nav>
+		    <div class="nav-wrapper indigo darken-3">
+		      <a href="#!" class="brand-logo">Logo</a>
+		      <ul class="right hide-on-med-and-down">
+		        <li><a href="sass.html"><i class="material-icons left">search</i>Bucar</a></li>
+		        <li><a href="badges.html"><i class="material-icons right">view_module</i>Mostrar</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+
+		
+		<div class="container">
+		
+		<div class="row">
+			
 			<div class="col s4"><img src="image/1.jpg" class="responsive-img z-depth-3"></div>
 			<div class="col s4"><img src="image/2.jpg" class="responsive-img z-depth-3"></div>
 			<div class="col s4"><img src="image/3.jpg" class="responsive-img z-depth-3"></div>
@@ -20,31 +32,29 @@
 		</div>
 
 		<div class="row">
-			<   <table>
+	   <table>
         <thead>
           <tr>
-              <th data-field="id">Nombre</th>
-              <th data-field="name">Edad</th>
-              <th data-field="price">Peso</th>
+
+              <th data-field="nombre">Nombre</th><i class="material-icons">add</i>
+              <th data-field="edad">Edad</th><i class="material-icons">language</i>
+              <th data-field="sexo">Sexo</th><i class="material-icons">print</i>
+ 			  <th data-field="color">Color</th><i class="material-icons">add</i>
+              <th data-field="peso">Peso</th><i class="material-icons">language</i>
+              
+
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td>Bombom</td>
-            <td>16</td>
-            <td>12</td>
+            <td id="name">empty</td>
+            <td id="age">empty</td>
+            <td id="sexo">empty</td>
+            <td id="color">empty</td>
+            <td id="Peso">empty</td>
           </tr>
-          <tr>
-            <td>Bellota</td>
-            <td>6</td>
-            <td>16</td>
-          </tr>
-          <tr>
-            <td>Kitty</td>
-            <td>5</td>
-            <td>16</td>
-          </tr>
+         
         </tbody>
       </table>
 
@@ -59,27 +69,39 @@
 
 		</div>
 
+		<div class="col s12">
+
+			<input type="date" class="datepicker">
+
+		</div>
+
+
+
 	</div>
-	<script>
-	var min,max;
-	function random(min,max){
-
-		var aleatorio=Math.random();
-		alert (aleatorio);
-		
-		var numero = Math.floor(aleatorio*(max-min)+min);
-
-	return numero;
-	}
-
-	alert(random (20,50));
-
-	</script>
+	
 
 
-
+<script src="js/archivos.js"></script>
 <script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/materialize.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.dropdown-button').dropdown();
+		$(".button-collapse").sideNav();
+		$('.datepicker').pickadate();
+	});
+
+	/*function mostrar(pos){
+
+		document.write(pos.coords.latitude + "," + pos.coords.longitude);
+
+	}
+	navigator.geolocation.getCurrentPosition(mostrar);
+*/
+
+</script>
+
+
 </body>	
 
 <footer></footer>
